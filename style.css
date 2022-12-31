@@ -1,0 +1,119 @@
+/* Custom Properties */ 
+:root {
+    --clr-primary-red:hsl(0, 78%, 62%);
+    --clr-primary-cyan:hsl(180, 62%, 55%);
+    --clr-primary-orange:hsl(34, 97%, 64%);
+    --clr-primary-blue:hsl(212, 86%, 64%);
+
+    --clr-neutral-blue-800:hsl(234, 12%, 34%);
+    --clr-neutral-blue-400:hsl(229, 6%, 66%);
+    --clr-neutral-gray-100:hsl(0, 0%, 98%);
+
+    --fw-200:200;
+    --fw-400:400;
+    --fw-600:600;
+
+    --ff-poppins:'Poppins', sans-serif;
+}
+
+/*------*/
+body {
+    background-color:var(--clr-neutral-gray-100);
+    font-family: var(--ff-poppins);
+    font-size: 15px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+/* Header Styles */
+header {
+    text-align: center;
+}
+.header__subtitle {
+    font-weight: var(--fw-200);
+    color:var(--clr-neutral-blue-800);
+    font-size: 30px;
+}
+
+.header__title {
+    color: var(--clr-neutral-blue-800);
+    margin-bottom: 14px;
+    font-size: 30px;
+}
+
+.header__text {
+    font-weight: var(--fw-200);
+    color: var(--clr-neutral-blue-400);
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Cards Styles */
+.content {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr) ;
+    margin-top: 60px;
+}
+.supervisor,
+.calculator {
+    align-self: center;
+}
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+}
+.card img {
+    margin-left: auto;
+}
+.card h2 {
+    color: var(--clr-neutral-blue-800);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card p {
+    color: var(--clr-neutral-blue-400);
+    font-weight: var(--fw-200);
+    margin-bottom: 30px;
+}
+.supervisor {
+    border-top: 3px solid var(--clr-primary-cyan);
+    
+}
+.teambuilder {
+    border-top: 3px solid var(--clr-primary-red);
+    margin-bottom: 25px;
+}
+.karma {
+    border-top: 3px solid var(--clr-primary-orange);  
+}
+.calculator {
+    border-top: 3px solid var(--clr-primary-blue);
+}
+
+@media (max-width:800px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:450px) {
+    .header__subtitle {
+        font-size: 18px;
+    }
+    
+    .header__title {
+        font-size: 18px;
+    }
+    
+    .header__text {
+        font-size: 14px ;
+        width: 90%;
+    }
+    .card h2 {
+        font-size: 15px;
+    }
+}
