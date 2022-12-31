@@ -65,6 +65,7 @@ header {
     background-color: white;
     padding: 1.875rem;
     border-radius: 6px;
+    box-shadow: -5px 0px 10px rgba(128, 128, 128, 0.15),5px 5px 10px rgba(128, 128, 128, 0.15);
 }
 .card img {
     margin-left: auto;
